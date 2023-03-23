@@ -1,0 +1,22 @@
+{
+  "name": "language_learning-javascript",
+  "version": "1.0.0",
+  "description": "Learning JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerry-mandering/language_learning-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerry-mandering/language_learning-javascript/issues"
+  },
+  "homepage": "https://github.com/gerry-mandering/language_learning-javascript#readme",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}
