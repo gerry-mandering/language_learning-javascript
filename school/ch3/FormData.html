@@ -1,0 +1,19 @@
+<script>
+    const formData = new FormData();
+    formData.append('name', 'zerocho');
+    formData.append('item', 'orange');
+    formData.append('item', 'melon');
+    console.log(formData.has('item')); // true
+    formData.has('money'); // false;
+    formData.get('item');// orange
+    console.log(formData.getAll('item'));
+    formData.getAll('item'); // ['orange', 'melon'];
+    formData.append('test', ['hi', 'zero']);
+    console.log(formData.getAll('test'));
+    formData.get('test'); // hi, zero
+    formData.delete('test');
+    formData.get('test'); // null
+    formData.set('item', 'apple');
+    formData.getAll('item'); // ['apple'];
+    console.log(formData.getAll('name'));
+  </script>

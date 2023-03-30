@@ -1,0 +1,13 @@
+<ul>
+    <li id="num1" data-id="1" data-user-job="programmer">Zero</li>
+    <li id="num2" data-id="2" data-user-job="designer">Nero</li>
+    <li id="num3" data-id="3" data-user-job="programmer">Hero</li>
+    <li id="num4" data-id="4" data-user-job="ceo">Kero</li>
+  </ul>
+  <script>
+    console.log(document.querySelector('#num1').dataset);
+    document.querySelector('#num1').dataset.monthSalary = 1000;
+    console.log(document.querySelector('#num1').dataset);
+    document.querySelector('#num1').dataset.userJob = "player";
+    console.log(document.querySelector('#num1').dataset);
+  </script>
