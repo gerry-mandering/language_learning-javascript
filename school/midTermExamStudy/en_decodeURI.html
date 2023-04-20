@@ -1,0 +1,15 @@
+//주소에 한글이 들어가 있는 경우에는 서버가 한글 주소를 이해하지 못함 -> encodeURIComponent메소드로 인코딩 -> 받는 쪽에서는 decodeURIComponent 메소드를 사용
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == xhr.DONE) {
+            if (xhr.status === 200 || xhr.status === 201) {
+                console.log(xhr.responseText);
+            } else {
+                console.error(xhr.responseText);
+            }
+        }
+    };
+    xhr.open('GET', 'https://www.zerocho.com/api/search/' + encodeURIComponent('노드'));
+    xhr.send();
+</script>

@@ -1,0 +1,16 @@
+<script>
+    var formData = new FormData();
+    formData.append('name', 'zerocho');
+    formData.append('item', 'orange');
+    formData.append('item', 'melon');
+    console.log(formData.has('item'));
+    console.log(formData.has('money'));
+    console.log(formData.get('item'));
+    console.log(formData.getAll('item'));
+    formData.append('test', ['hi', 'zero']);
+    console.log(formData.get('test'));
+    formData.delete('test');
+    console.log(formData.get('test'));
+    formData.set('item', 'apple');
+    console.log(formData.getAll('item'));
+</script>
